@@ -68,14 +68,15 @@ for r in results:
 ## MCP Integration
 
 To use Kongen with LLM agents over the Model Context Protocol, install the
-separate [`kongen-mcp`](https://pypi.org/project/kongen-mcp/) server package:
+separate [`kongenlabs-mcp`](https://pypi.org/project/kongenlabs-mcp/) server package:
 
 ```bash
-pip install kongen-mcp
+pip install kongenlabs-mcp
 ```
 
-It exposes `logic_score` and `transfer_score` as MCP tools backed by the same
-API. See the `kongen-mcp` package documentation for client configuration.
+It exposes `score_prompt`, `transfer_score`, `check_usage`, and `route_model`
+as MCP tools backed by the same API. See the `kongenlabs-mcp` package
+documentation for client configuration.
 
 ## Error Handling
 
